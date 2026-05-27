@@ -70,6 +70,57 @@ footer {
     background: rgba(0,0,0,0.9);
     margin-top: 40px;
 }
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .form-card {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    .btn-submit,
+    .btn-clear {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
 </style>
 </head>
 <body>
@@ -212,7 +263,6 @@ form.addEventListener('submit', (e) => {
     form.reset();
     ageWarning.style.display = 'none';
 });
-
 
 clearBtn.addEventListener('click', () => {
     form.reset();
